@@ -812,10 +812,10 @@ with tab_review:
     """)
 
     st.markdown("#### Analyst Verification Checklist")
-    chk1 = st.checkbox("1. Correlation vs. Causation: Validated that high feature importance is not mistakenly interpreted as causal business levers.", value=True)
-    chk2 = st.checkbox("2. Anomaly Context: Confirmed that statistical anomalies are investigated as deviations, not automatically flagged as fraud or defect.", value=True)
-    chk3 = st.checkbox("3. Data Hygiene & Drift: Verified that current data reflects target operational distributions and lacks temporal leakage.", value=True)
-    chk4 = st.checkbox("4. AI Insight Review: Audited generated natural language insights against verified tabular metrics to ensure zero hallucination.", value=True)
+    chk1 = st.checkbox("1. Correlation vs. Causation: Validated that high feature importance is not mistakenly interpreted as causal business levers.", value=False)
+    chk2 = st.checkbox("2. Anomaly Context: Confirmed that statistical anomalies are investigated as deviations, not automatically flagged as fraud or defect.", value=False)
+    chk3 = st.checkbox("3. Data Hygiene & Drift: Review whether the current dataset reflects expected operational distributions and check for potential temporal leakage before deployment.", value=False)
+    chk4 = st.checkbox("4. AI Insight Review: Verify that generated insights remain grounded in the computed tabular metrics and do not introduce unsupported claims.", value=False)
 
     st.markdown("---")
     st.markdown("#### Operational Risk Matrix")
